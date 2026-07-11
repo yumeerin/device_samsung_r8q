@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/halcyon_r8q.mk
+    $(LOCAL_DIR)/circle_r8q.mk

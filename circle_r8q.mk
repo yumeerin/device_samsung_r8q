@@ -23,17 +23,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/r8q/device.mk)
 
 # Inherit some common Halcyon stuff
-$(call inherit-product, vendor/halcyon/config/common.mk)
+$(call inherit-product, vendor/circle/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# CiRCLE  BUILT INS
+CIRCLE_BUILDTYPE := UNOFFICIAL
+WITH_GMS := true
+CIRCLE_MAINTAINER :=  Yume
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := halcyon_r8q
+PRODUCT_NAME := circle_r8q
 PRODUCT_DEVICE := r8q
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G780G
+PRODUCT_MODEL := S20FE
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
